@@ -1,6 +1,8 @@
 <br>
-<%= text_field_tag('name', params[:name], class: "form-control", placeholder: 'Your name') %>
+<%= text_field_tag('name', params[:name], class: "form-control", placeholder: 'Your name', id:'name') %>
 <br>
-<%= text_field_tag('name', params[:email], class: "form-control", placeholder: 'Email Id') %>
+<%= text_field_tag('name', params[:email], class: "form-control", placeholder: 'Email Id', id:'email') %>
 <br>
-<%= text_area_tag('name', params[:content], class: "form-control", placeholder: 'Let me know what you think ..', rows: "10") %>
+<%= text_area_tag('name', params[:content], class: "form-control", placeholder: 'Let me know what you think ..', rows: "10", id:'ebody') %>
+<br>
+<a href="" id="submit" class='btn btn-lg btn-primary'>Submit</a>

@@ -42,13 +42,13 @@
 <div class="col-sm-3 col-xs-6">
 <i class="glyphicon glyphicon-globe"> </i>
 <h4>Web Technologies</h4>
-<p>HTML, CSS, JS, AJAX, JQuery, Bootstrap, Ruby on Rails , SAPUI5</p>
+<p>HTML, CSS, JS, AJAX, JQuery, SQL, Bootstrap, Ruby on Rails , Drupal, SAPUI5</p>
 </div>
 
 <div class="col-sm-3 col-xs-6">
 <i class="glyphicon fa fa-code" aria-hidden="true"> </i>
 <h4>Programing Languages</h4>
-<p>JAVA, C, Rails, ABAP</p>
+<p>JAVA, Python, C, Rails, ABAP</p>
 <br>
 <br>
 </div>
@@ -78,11 +78,14 @@
 <div id="information" class="pad-section">
 <div class="container">
 <div class="row">
+<div class="row">	
 <div class="col-md-6 col-sm-12">
 <div class="panel panel-default">
 <div class="panel-heading">
-<h2 class="panel-title">MedimailHub</h2>
+<!-- <h2 class="panel-title">MedimailHub</h2> -->
+<%= link_to "MedimailHub", "https://www.MedimailHub.us" %>
 </div>
+
 <div class="panel-body lead">
 <!-- 16:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-16by9">
@@ -90,7 +93,11 @@
 </div>
 </div>
 <div class="panel-footer">
-<h5 class="">www.MedimailHub.us is a Patient/Provider portal built in collaboration with Dr.Ajay of Penn Medicine. It is a one stop solution to provide a way of medical providers to interract with each other and their patients. Features of the app include a secure messaging interface, document sharing system as well as a video call service with an inbuilt payment system</h5>
+<h5 class="">Developed <a href="https://www.MedimailHub.us">www.MedimailHub.us</a> , a web application that provides a secure portal for medical physicians to interact with and provide consultations to patients and other physicians remotely. Built a secure messaging , document and reports sharing and video chat (OpenTok) features that strictly adheres to HIPAA laws. Utilizing Ruby on Rails as the base framework, PostgreSQL for the database, the application incorporates most major modern web technologies and is highly optimized for mobile browsers. Implemented push notifications using Firebase Cloud Messaging.
+<br>
+<br>
+<b>GitHub:</b>  <a href="https://github.com/cit-upenn/cis-557-projects-fall-2016-medimailhub">Repository</a>
+</h5>
 </div>
 </div>
 </div>.
@@ -99,15 +106,42 @@
 <div class="col-sm-12">
 <div class="panel panel-default">
 <div class="panel-heading">
-<%= link_to "Deloitte Consulting LLP", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %>
+<%= link_to "PennSkype - A peer to peer Skype clone", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %>
 </div>
 <div class="panel-body lead" style="text-align: justify;">
-<h5>Lead a team of full stack developers to design, develop and deliver two web applications that is currently being used by Deloitte US-India to help manage resources' availability for their recruitment drives. Developed the web page using SAPUI5 framework and ported it to a mobile app across platforms using PhoneGap with Cordova plugins. Implemented the back-end on a Netweaver Gateway system that communicated with the UI using Open Rest Interfaces via OData protocols.Analysed relationships to model the persistence MySQL layer using normalized database concepts.</h5>
+<h5>Built a peer to peer Skype clone in Java for video calls over the same network. Principal Component Analysis based image compression
+was implemented using the Java Math(JAMA) library to reduce latency in data transmission. Transmitted the compressed data between
+IPs with socket programming. User Interface was designed using MVC principles in swing. Handled concurrency for simultaneous
+transmission, compression/reconstruction, and display with threads.
+<br>
+<br>
+<b>GitHub:</b>  <a href="https://github.com/chrisschlitt/WebcamCompression">Repository</a>
+</h5>
 </div>
+</div> 
 </div>
 </div>
 
 <div class="col-sm-12">
+<div class ="row">		
+<div class="panel panel-default">
+<div class="panel-heading">
+<%= link_to "Recruitment availability tracker Web and Mobile application", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %>
+</div>
+<div class="panel-body lead" style="text-align: justify;">
+<h5>Lead a team of full stack developers to design, develop and deliver two web applications that is currently being used by Deloitte US-India to help manage resource's availability for their recruitment drives. Developed the web page using SAPUI5 framework and ported it
+to a mobile app across platforms using PhoneGap with Cordova plugins. Implemented the back-end on a Netweaver Gateway system
+that communicated with the UI using Open Rest Interfaces via OData protocols. Handled and analyzed relationships to model the
+persistence MySQL layer using normalized database concepts.</h5><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 col-sm-12">
 <div class="panel panel-default">
 <div class="panel-heading">
 <%= link_to "Optimized data transfer in Multimedia Wireless Sensor Networks", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %>
@@ -118,8 +152,22 @@ compression by half but is not so effective for compression by one fourth in vid
 </div>
 </div>
 </div>
+
+
+<div class="col-md-6 col-sm-12">
+<div class="panel panel-default">
+<div class="panel-heading">
+<%= link_to "SAP ABAP developer for MNCs in the Textile and Healthcare Industries at Deloitte", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %>
+</div>
+<div class="panel-body lead" style="text-align: justify;">
+<h5>Worked as an SAP resource involving translation of business requirements to robust code. Part of two successful project cycles including design, implementation, testing and delivery phases and worked in teams with members from across the globe. Developed code that
+directly impacted the client's business and reduced supply chain workflow times to less than 10% of original. Adhered to strict
+performance along with sterling OOP coding standards for a client that had a previous failed attempt to computerize the business.</h5><br>
 </div>
 </div>
+</div>
+</div>
+
 
 <div class="col-sm-12">
 <div class="panel panel-default">
@@ -133,6 +181,7 @@ compression by half but is not so effective for compression by one fourth in vid
 </div>
 
 <div class="col-sm-6"></div>
+
 
 </div>
 </div>
@@ -189,5 +238,20 @@ $(document).ready(function() {
 			scrollTop: $(ziel).offset().top
 		}, 700 , function (){location.hash = ziel;});
          });
+	scroll();
+	$( "#submit" ).click(function() {
+  		emailjs.send("default_service","template_nNExiXcH",{reply_to: $('#email').val(), from_name: $('#name').val(), to_name: $('#name').val(), message_html: $('#ebody').val() });
+  		$('#name').val("");
+  		$('#email').val("");
+  		$('#ebody').val("");	
+	});
+
 });
+
+function scroll() {
+    setTimeout(function(){
+        window.scrollTo(0,0);
+    }, 2000);
+}
+
 </script>
