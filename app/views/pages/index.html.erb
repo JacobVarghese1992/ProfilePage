@@ -1,6 +1,7 @@
 <!-- first section - Home -->
 <div id="home" class="home">
-<div class="text-vcenter">
+<div class="text-vcenter"> 
+<h3><%= link_to "Resume - Software Engineer", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %> &nbsp; &nbsp; &nbsp;<%= link_to "Resume - Product Manager", pdfjs.minimal_path(file: "/JacobVarghesePM.pdf") %></h3>
 <h3>If you agree that a Programmer is a machine that turns coffee into code ..</h3>
 <h3>You are worthy to scroll down <a href="#about" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-chevron-down"></span></a> </h3>
 
@@ -204,7 +205,7 @@ performance along with sterling OOP coding standards for a client that had a pre
 <!-- </div> -->
 
 
-<div class="col-sm-12">
+<!-- <div class="col-sm-12">
 <div class="panel panel-default">
 <div class="panel-heading">
 <%= link_to "Resume Software Engineer", pdfjs.minimal_path(file: "/JacobVarghese.pdf") %>
@@ -214,19 +215,7 @@ performance along with sterling OOP coding standards for a client that had a pre
 </div>
 </div>
 </div>
-
-<div class="col-sm-12">
-<div class="panel panel-default">
-<div class="panel-heading">
-<%= link_to "Resume Product Manager", pdfjs.minimal_path(file: "/JacobVarghesePM.pdf") %>
-</div>
-<div class="panel-body lead" style="height:400px;">
-<%= pdfjs_viewer pdf_url: "/JacobVarghesePM.pdf", style: :full %>
-</div>
-</div>
-</div>
-
-</div>
+ -->
 
 <div class="col-sm-6"></div>
 
@@ -287,7 +276,7 @@ $(document).ready(function() {
 		}, 700 , function (){location.hash = ziel;});
          });
 	scroll();
-	$( "#submit" ).click(function() {
+	$( "#submit" ).click(function() {&nbsp;&nbsp;&nbsp;
   		emailjs.send("default_service","template_nNExiXcH",{reply_to: $('#email').val(), from_name: $('#name').val(), to_name: $('#name').val(), message_html: $('#ebody').val() });
   		$('#name').val("");
   		$('#email').val("");
@@ -297,9 +286,9 @@ $(document).ready(function() {
 });
 
 function scroll() {
-    setTimeout(function(){
-        window.scrollTo(0,0);
-    }, 2000);
+    // setTimeout(function(){
+    //     window.scrollTo(0,0);
+    // }, 2000);
 }
 
 </script>

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   
   get 'index' => 'pages#index'
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
+  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs2'
+
 
 
   
